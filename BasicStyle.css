@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* font-family: 'Red Hat Display', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+.CardContainer{
+    background-image: url(./pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:hsl(225, 100%, 94%);
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardContainer .Card{
+    border-radius: 30px;
+    border: 2px solid red;
+    height: 90vh;
+    width: 25vw;
+    background-color: white;
+}
+.CardContainer .Card .Poster{
+    height: 30%;
+}
+.CardContainer .Card .Poster img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   height: 100%;
+   width: 100%;
+}
+
+.CardContainer .Card .Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    gap: 1em;
+}
+.CardContainer .Card .Content .ContentHeading{
+   margin-top: 2em;
+}
+.CardContainer .Card .Content .ContentHeading h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+.CardContainer .Card .Content .ContentParagraph{
+    padding: 0 1.8em;
+    text-align: center;
+}
+.CardContainer .Card .Content .ContentParagraph p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.CardContainer .Card .Content .AnualPlan{
+    background-color:hsl(225, 100%, 98%) ;
+   width: 85%;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   font-family: 'Red Hat Display', sans-serif;
+}
+.CardContainer .Card .Content .AnualPlan .PlanIcon{
+    margin-right: 10px;
+}
+.CardContainer .Card .Content .AnualPlan .Plan{
+    font-weight: 500px;
+    margin-right: 5px;
+}
+.CardContainer .Card .Content .AnualPlan .Change{
+    margin-left: 3em;
+}
+.CardContainer .Card .Content .AnualPlan .Change a{
+   color: hsl(245, 75%, 52%);
+   font-weight: 700px;
+}
+.CardContainer .Card .Content .AnualPlan .Change a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+}
+button{
+    margin-top: 20px;
+    width: 20em;
+    padding: 1em 0em;
+    border-radius: 5px;
+    background-color:hsl(245, 75%, 52%);
+    color: white;
+    font-family:'Red Hat Display', sans-serif;
+    font-weight: 700px;
+    border: none;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.CancleButton{
+    margin-right: 20px;
+    font-family:'Red Hat Display', sans-serif;
+    font-weight: 700px;
+}
+.CancleButton:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 900px;
+}
+
+
+@media screen and (min-width: 150px) and (max-width: 500px) {
+    .CardContainer{
+        background-image: url(./pattern-background-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color:hsl(225, 100%, 94%);
+        height:100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CardContainer .Card{
+        height: 85vh;
+        width: 80vw;
+    }
+    
+    .CardContainer .Card .Content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5em;
+    }
+    .CardContainer .Card .Content .ContentHeading{
+       margin-top: 15px;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 900px) {
+    .CardContainer{
+        background-image: url(./pattern-background-mobile.svg);
+    }
+    .CardContainer .Card{
+        height: 90vh;
+        width: 70vw;
+    }
+    
+    .CardContainer .Card .Content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5em;
+    }
+    .CardContainer .Card .Content .ContentHeading{
+       margin-top: 15px;
+    }
+}
